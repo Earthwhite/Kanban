@@ -1,0 +1,90 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 90vw;
+    /*v : viewpoint*/
+    height: 90vh;
+    background-color: #000000; 
+}
+#kanbanBoard{
+    display: flex;
+    gap: 24px;
+    padding: 48px;
+    width: 100%;
+    height: 100%;
+}
+.swimlane{
+    border: 2px solid rgb(255, 255, 255);
+    /* การตั้งค่าเริ่มต้นของ oject เลข 1 หมายถึง*/
+    flex-basis: 1;
+    /* การหดตัว ให้เข้ากับ เว็บเพจ*/
+    flex-shrink: 0;
+    flex-grow: 1;
+    background-color: #ffffff;
+}
+.card{
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #ffffff; /* พื้นหลังของการ์ดสีดำ */
+    color: #000000; /* ตัวอักษรสีขาวในกล่อง */
+    /*background-color: aliceblue;*/
+    .first & {
+        background-color: rgb(216, 97, 97);
+    }
+    .To & {
+        background-color: aquamarine;
+    }
+    .inProgress &{
+        background-color: burlywood;
+    }
+    .Done & {
+        background-color: rgb(168, 142, 103);
+    }
+}
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px 20px; /* เพิ่ม padding เพื่อให้ปุ่มใหญ่ขึ้น */
+    font-size: 16px; /* เพิ่มขนาดตัวอักษร */
+    border: 2px solid gray; /* ขอบของปุ่ม */
+    border-radius: 5px; /* มุมป้านของปุ่ม */
+    background-color: #000000; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    transition: background-color 0.3s; /* เพิ่มการเปลี่ยนสีพื้นหลังเมื่อ hover */
+}
+
+/* เพิ่มสไตล์เมื่อ hover ปุ่ม */
+button:hover {
+    background-color: #2a3563; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=TH+Sarabun+New:wght@400;700&display=swap');
+
+h1 {
+    color: #ffffff;
+    display: flex;
+    align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    position: relative;
+    top: 20px;
+    right: -30px;
+    font-family: 'TH Sarabun New', sans-serif;
+}
+h2 {
+    color: #000000;
+    display: flex;
+    justify-content: center; /* จัดกลางในแนวนอน */
+    font-family: 'TH Sarabun New', sans-serif;
+}
+.bottom {
+    padding: 0; /* ลบการตั้งค่า padding */
+    width: auto; /* ปรับความกว้างให้เป็นอัตโนมัติ */
+    height: auto; /* ปรับความสูงให้เป็นอัตโนมัติ */
+    font-size: 16px; /* เพิ่มขนาดตัวอักษร */
+    border: 2px solid gray; /* ขอบของปุ่ม */
+    border-radius: 5px; /* มุมป้านของปุ่ม */
+    background-color: #ffffff; /* สีพื้นหลัง */
+    color: rgb(0, 0, 0); /* สีข้อความ */
+    margin-right: 20px;
+    cursor: pointer;
+    }
