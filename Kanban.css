@@ -75,8 +75,7 @@ h2 {
     display: flex;
     justify-content: center; /* จัดกลางในแนวนอน */
     font-family: 'TH Sarabun New', sans-serif;
-}
-.bottom {
+}   .bottom {
     padding: 0; /* ลบการตั้งค่า padding */
     width: auto; /* ปรับความกว้างให้เป็นอัตโนมัติ */
     height: auto; /* ปรับความสูงให้เป็นอัตโนมัติ */

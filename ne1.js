@@ -1,5 +1,5 @@
 const pasteCard = (card) => {
-    const swimlanes = document.querySelectorAll('.swimlane');
+    const swimlanes = document.querySelectorAll('.swimlane');/*เลือก class*/
     const randomSwimlane = 0;
     swimlanes[randomSwimlane].appendChild(card);
 }
